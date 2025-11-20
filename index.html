@@ -7,7 +7,27 @@
 </head>
 <body>
     <script>
-        console.log("Hello World!");
+        let humanScore = 0;
+        let computerScore = 0;
+
+        function getComputerChoice(){
+            return Math.random();
+        }
+        console.log(getComputerChoice());
+
+        const getHumanChoice = prompt("Enter 'rock' 'paper' 'scissor'")
+        console.log(getHumanChoice);
+
+        function playRound(humanChoice, computerChoice){
+            humanChoice.toLowerCase();
+            computerChoice.toLowerCase();
+        }
+
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+
+        playRound(humanSelection, computerSelection);
+        
     </script>
 </body>
 </html>
