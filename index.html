@@ -7,27 +7,29 @@
 </head>
 <body>
     <script>
-        let humanScore = 0;
-        let computerScore = 0;
-
         function getComputerChoice(){
             return Math.random();
         }
-        console.log(getComputerChoice());
 
-        const getHumanChoice = prompt("Enter 'rock' 'paper' 'scissor'")
-        console.log(getHumanChoice);
-
-        function playRound(humanChoice, computerChoice){
-            humanChoice.toLowerCase();
-            computerChoice.toLowerCase();
-        }
+        function getHumanChoice(){
+            const choice = prompt("Enter 'rock' 'paper' 'scissor'");
+            return choice.toLowerCase();
+        } 
 
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
 
-        playRound(humanSelection, computerSelection);
-        
+        function playGame(){
+            let humanScore = 0;
+            let computerScore = 0;
+            
+            function playRound(humanChoice, computerChoice){
+                
+            }
+
+            playRound(humanSelection, computerSelection);
+        }
+        console.log(playGame());
     </script>
 </body>
 </html>
