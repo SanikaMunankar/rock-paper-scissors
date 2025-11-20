@@ -20,7 +20,7 @@ This project helped me strengthen my understanding of building small interactive
 6. The player with the **higher score** (You or the Computer) wins the game.
 
 ## 🛠️ Technologies Used
-- **HTML** – for the game structure  
-- **JavaScript** – for game logic and interactivity  
+- **HTML** 
+- **JavaScript** 
 
 ---
